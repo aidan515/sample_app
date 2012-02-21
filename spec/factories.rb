@@ -1,9 +1,10 @@
 FactoryGirl.define do
-	factory :user do
-		name	"Aidan Corbett"
-		email	"acor@gmail.com"
-		password "foobar"
-	end
+	Factory.define :user do |user|
+	  user.name                  "Michael Hartl"
+	  user.email                 "mhartl@example.com"
+	  user.password              "foobar"
+	  user.password_confirmation "foobar"
+	end	
 end
 # By passing symbol :user to the factory command, we tell Factory Girl that the subsequent
 # definition is for a User model object.
